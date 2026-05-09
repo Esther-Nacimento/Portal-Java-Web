@@ -1,12 +1,23 @@
 # 🎓 Portal Java Web — Controle de Sessão e Autenticação
 
-Sistema Web desenvolvido em Java com autenticação de usuários utilizando controle de sessão (`HttpSession`) e persistência de dados em arquivo JSON.
+Sistema Web desenvolvido em Java utilizando JSP, Servlets e controle de sessão (`HttpSession`) para autenticação de usuários.  
+As credenciais são armazenadas em um arquivo JSON, permitindo persistência simples de dados sem utilização de banco de dados.
 
-O projeto possui uma área restrita acessível apenas após login, contendo conteúdos educacionais sobre Programação Web, ferramentas de build e persistência de dados.
+O projeto foi desenvolvido como atividade acadêmica da disciplina de Programação Orientada a Objetos Web.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+# 📚 Objetivo do Trabalho
+
+Desenvolver um site Java Web com autenticação de usuários por sessão, em que:
+
+- As credenciais de acesso fossem armazenadas em arquivo JSON
+- O sistema permitisse acesso restrito após login
+- As páginas apresentassem conteúdos relacionados à Programação Web
+
+---
+
+# 🚀 Tecnologias Utilizadas
 
 - ☕ Java
 - 🌐 JSP (Java Server Pages)
@@ -19,31 +30,15 @@ O projeto possui uma área restrita acessível apenas após login, contendo cont
 
 ---
 
-## 🔐 Funcionalidades
+# 🔐 Funcionalidades
 
-✅ Sistema de login com autenticação  
-✅ Controle de sessão com `HttpSession`  
-✅ Área restrita para usuários autenticados  
-✅ Cadastro de estudantes  
-✅ Persistência de dados utilizando JSON  
+✅ Sistema de Login  
+✅ Controle de Sessão com `HttpSession`  
+✅ Cadastro de Estudantes  
+✅ Área Restrita  
+✅ Persistência de Dados em JSON  
 ✅ Navegação entre páginas JSP  
-✅ Conteúdo educativo sobre Java Web  
-
----
-
-## 📚 Conteúdos Disponíveis
-
-O sistema apresenta informações sobre:
-
-- Estrutura da Programação Web
-- Ferramentas de Build
-- Apache Ant
-- Apache Maven
-- Gradle
-- Programação Java Web
-- Servlet
-- JSP
-- Camada de Persistência
+✅ Logout de usuário  
 
 ---
 
@@ -51,67 +46,132 @@ O sistema apresenta informações sobre:
 
 ## 🔐 Tela de Login
 
+Sistema responsável pela autenticação do usuário utilizando sessão HTTP.
+
 ![Tela de Login](assets/login.png)
 
-## 🏠 Menu Principal
-
-![Menu Principal](assets/menu.png)
-
-## 💾 Persistência
-
-![Persistência](assets/persistencia.png)
-
-## 🗂️ Estrutura do Projeto
-
-![Estrutura](assets/estrutura.png)
+---
 
 ## 👤 Cadastro de Conta
 
-![Criar Conta](assets/criarConta.png)
+Página utilizada para registrar novos estudantes no arquivo JSON.
 
-## ☕ Servlet e JSP
-
-![Servlet JSP](assets/servelet-jsp.png)
----
-
-## 🗂️ Estrutura do Projeto no NetBeans
-
-![Estrutura](assets/estrutura.png)
+![Cadastro](assets/criarConta.png)
 
 ---
 
-## ▶️ Como Executar o Projeto
+## 🏠 Menu Principal
 
-### 1️⃣ Clone o repositório
+Área restrita acessível apenas após autenticação.
+
+![Menu Principal](assets/menu.png)
+
+---
+
+# 📖 Conteúdos Desenvolvidos
+
+## 1️⃣ Estrutura da Programação Web
+
+Explicação sobre o funcionamento da arquitetura cliente-servidor, protocolo HTTP, Tomcat, JSP e sessões.
+
+![Estrutura da Programação Web](assets/estrutura.png)
+
+---
+
+## 2️⃣ Ferramentas de Build — o que são e para que servem
+
+Apresentação das ferramentas Apache Ant, Maven e Gradle.
+
+![Ferramentas de Build](assets/ferramentas.png)
+
+---
+
+## 3️⃣ Programação Java Web — Servlet e JSP
+
+Conteúdo sobre o funcionamento das Servlets e páginas JSP na construção da aplicação.
+
+![Servlet e JSP](assets/servlet-jsp.png)
+
+---
+
+## 4️⃣ Camada de Persistência
+
+Demonstração da persistência de dados utilizando arquivos JSON e biblioteca Gson.
+
+![Persistência](assets/persistencia.png)
+
+---
+
+# 🗂️ Estrutura do Projeto
 
 ```bash
-git clone https://github.com/seu-usuario/Portal-Java-Web.git
+Portal-Java-Web/
+│
+├── Web Pages/
+│   ├── WEB-INF/
+│   │   ├── usuarios.json
+│   │   └── web.xml
+│   │
+│   ├── cadastro.jsp
+│   ├── estrutura.jsp
+│   ├── build.jsp
+│   ├── javaweb.jsp
+│   ├── persistencia.jsp
+│   ├── principal.jsp
+│   └── index.jsp
+│
+├── Source Packages/
+│   ├── controller/
+│   └── model/
+│
+├── assets/
+│   ├── login.png
+│   ├── criarConta.png
+│   ├── menu.png
+│   ├── estrutura.png
+│   ├── ferramentas.png
+│   ├── servlet-jsp.png
+│   └── persistencia.png
+│
+└── README.md
 ```
 
 ---
 
-### 2️⃣ Abra o projeto no NetBeans
+# ▶️ Como Executar o Projeto
 
-- Vá em **File > Open Project**
-- Selecione a pasta do projeto
+## 1️⃣ Clonar o repositório
 
----
-
-### 3️⃣ Configure o Apache Tomcat
-
-- Adicione o servidor Tomcat no NetBeans
-- Defina-o como servidor principal do projeto
+```bash
+git clone https://github.com/seu-usuario/portal-java-web.git
+```
 
 ---
 
-### 4️⃣ Execute o projeto
+## 2️⃣ Abrir no NetBeans
 
-- Clique em **Run Project**
-- O sistema abrirá automaticamente no navegador
+- File → Open Project
+- Selecionar a pasta do projeto
 
 ---
 
-## 🔑 Exemplo de Usuário
+## 3️⃣ Configurar o Apache Tomcat
+
+Adicionar o servidor Apache Tomcat no NetBeans e vinculá-lo ao projeto.
+
+---
+
+## 4️⃣ Executar o sistema
+
+Executar o projeto utilizando:
+
+```bash
+Run Project
+```
+
+---
+
+# 🔑 Exemplo de Usuário JSON
 
 ```json
 [
@@ -124,21 +184,23 @@ git clone https://github.com/seu-usuario/Portal-Java-Web.git
 
 ---
 
-## 🎯 Objetivo do Projeto
+# 🎯 Conceitos Aplicados
 
-Este projeto foi desenvolvido para a atividade A1 da disciplina de Programação Orientada a Objetos Web, com o objetivo de praticar:
-
-- Desenvolvimento Java Web
-- Controle de sessão
-- Servlets e JSP
-- Persistência de dados
-- Estrutura MVC
-- Manipulação de arquivos JSON
+- Programação Java Web
+- Arquitetura Cliente-Servidor
+- JSP
+- Servlet
+- Sessão HTTP
+- Persistência de Dados
+- JSON
+- Organização MVC
+- Navegação entre páginas
+- Controle de autenticação
 
 ---
 
-## 👩‍💻 Desenvolvedora
+# 👩‍💻 Desenvolvedora
 
 Esther Nascimento
 
-Projeto acadêmico desenvolvido em Java Web utilizando NetBeans e Apache Tomcat.
+Projeto acadêmico desenvolvido utilizando Java Web, JSP, Servlets, JSON e Apache Tomcat.
