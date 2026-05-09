@@ -102,42 +102,6 @@ Demonstração da persistência de dados utilizando arquivos JSON e biblioteca G
 
 ---
 
-# 🗂️ Estrutura do Projeto
-
-```bash
-Portal-Java-Web/
-│
-├── Web Pages/
-│   ├── WEB-INF/
-│   │   ├── usuarios.json
-│   │   └── web.xml
-│   │
-│   ├── cadastro.jsp
-│   ├── estrutura.jsp
-│   ├── build.jsp
-│   ├── javaweb.jsp
-│   ├── persistencia.jsp
-│   ├── principal.jsp
-│   └── index.jsp
-│
-├── Source Packages/
-│   ├── controller/
-│   └── model/
-│
-├── assets/
-│   ├── login.png
-│   ├── criarConta.png
-│   ├── menu.png
-│   ├── estrutura.png
-│   ├── ferramentas.png
-│   ├── servlet-jsp.png
-│   └── persistencia.png
-│
-└── README.md
-```
-
----
-
 # ▶️ Como Executar o Projeto
 
 ## 1️⃣ Clonar o repositório
