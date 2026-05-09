@@ -53,18 +53,25 @@ O sistema apresenta informações sobre:
 
 ![Tela de Login](assets/login.png)
 
----
-
 ## 🏠 Menu Principal
 
 ![Menu Principal](assets/menu.png)
 
----
-
-## 💾 Camada de Persistência
+## 💾 Persistência
 
 ![Persistência](assets/persistencia.png)
 
+## 🗂️ Estrutura do Projeto
+
+![Estrutura](assets/estrutura.png)
+
+## 👤 Cadastro de Conta
+
+![Criar Conta](assets/criarConta.png)
+
+## ☕ Servlet e JSP
+
+![Servlet JSP](assets/servelet-jsp.png)
 ---
 
 ## 🗂️ Estrutura do Projeto no NetBeans
